@@ -5,14 +5,14 @@ pipeline{
     stages{
 
         stage{'Git Checkout'}{
+            
+            steps{
+                script{
 
-           steps{
+                    git branch: 'main', url: 'https://github.com/KavyaUST198606/java_app.git'
 
-            script{
-
-                git branch: 'main', url: 'https://github.com/KavyaUST198606/java_app.git'
+                }
             }
-           }
         }
     }
 }
