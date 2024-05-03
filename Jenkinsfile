@@ -7,13 +7,12 @@ pipeline{
     stages{
 
         stage('Git Checkout'){
-            
-            steps{
+        steps{
             gitCheckout(
                 branch: "main",
                 url: "https://github.com/KavyaUST198606/java_app.git"
             )
-                    }
+                    }}
         stage('Unit test'){
             
             steps{
@@ -28,4 +27,3 @@ pipeline{
         }
 
     }
-}
