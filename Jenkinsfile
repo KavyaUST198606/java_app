@@ -14,7 +14,18 @@ pipeline{
                 url: "https://github.com/KavyaUST198606/java_app.git"
             )
                     }
+        stage('Unit test'){
+            
+            steps{
+                script{
+                    test()
+                }
+            
 
                 }
+        
             }
         }
+
+    }
+}
